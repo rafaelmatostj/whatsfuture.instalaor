@@ -183,7 +183,7 @@ backend_node_dependencies() {
 
   sudo su - deploy <<EOF
   cd /home/deploy/${nome_instancia}/backend
-  npm install --force --silent
+  npm install --force
 EOF
 
   sleep 2
@@ -226,8 +226,9 @@ whatsappweb_update() {
   pm2 stop all
   rm .wwebjs_auth -Rf
   rm .wwebjs_cache -Rf
+  rm package-lock.json
   npm r whatsapp-web.js
-  npm i whatsapp-web.js@^1.24.0
+  npm install github:pedroslopez/whatsapp-web.js
   pm2 restart all
 EOF
 
@@ -263,7 +264,8 @@ git_update() {
   sudo su - deploy <<EOF
   cd /home/deploy/${nome_instancia}
   pm2 stop all
-  git checkout master
+  git stash clear
+  git stash
   git pull
 EOF
 

@@ -1,4 +1,4 @@
-[![Grupo do WhatsApp](https://img.shields.io/badge/WhatsApp-Grupo%20IZING-brightgreen.svg)](https://chat.whatsapp.com/IIReEheixAx27ZbneHpskP)
+[![Grupo do WhatsApp](https://img.shields.io/badge/WhatsApp-Grupo%20Whazing-brightgreen.svg)](https://grupo.whazing.com.br)
 
 ## CRIAR SUBDOMINIO E APONTAR PARA O IP DA SUA VPS
 
@@ -12,10 +12,6 @@ Se quiser instalar 2 instancia mudar nome da instancia, porta backend, porta fro
 A opção atualizar vai pegar ultima versao do repositorio usado para instalar
 
 Nunca usar portas 80 e 443 para backend utilize porta 3000 a 3100 e frontend 4000 a 4100
-
-## MEU REPOSITORIO TEM ALGUMAS MUDANÇAS AO ORIGINAL VERIQUE O README
-
-https://github.com/cleitonme/izing.open.io
 
 
 ## CHECAR PROPAGAÇÃO DO DOMÍNIO
@@ -45,9 +41,12 @@ cd /root
 git clone https://github.com/cleitonme/izing.instalador.git izinginstalador
 ```
 Editar dados com seus dados, com nano para salvar aperta Ctrl + x
+
+Você pode definir o timezone desejado usando a variável de ambiente TIMEZONE. Caso não seja informado, o sistema usará o timezone padrão: America/Sao_Paulo.
 ```bash
 nano ./izinginstalador/config
 ```
+
 ```bash
 sudo chmod +x ./izinginstalador/izing
 ```
@@ -136,9 +135,17 @@ Depois acesse novamente url http://seuip:9000/
 
 -  [Powerful cloud VPS & Web hosting.](https://control.peramix.com/?affid=58)
 
+- Cupom 25% desconto "WHAZING"
+
+```bash
+WHAZING
+```
+#### Curtiu? Apoie o projeto!! Com sua doação, será possível continuar com as atualizações. Segue QR code (PIX)  
+
+[<img src="donate.jpg" height="160" width="180"/>](donate.jpg)
+
 ## Consultoria particular
 
-Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp (será cobrado por isso) 48 999416725 
+Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp (será cobrado por isso) (48) 3197-0599
 
--  [Versão pro do IZING](https://github.com/cleitonme/izing.pro.install)
--  [Versão API Bayles](https://github.com/cleitonme/izingpro.bayles.install)
+-  [Nova Versão com API Bayles](https://github.com/cleitonme/Whazing-SaaS.instalador)
