@@ -13,6 +13,10 @@ A opção atualizar vai pegar ultima versao do repositorio usado para instalar
 
 Nunca usar portas 80 e 443 para backend utilize porta 3000 a 3100 e frontend 4000 a 4100
 
+## MEU REPOSITORIO TEM ALGUMAS MUDANÇAS AO ORIGINAL VERIQUE O README
+
+https://github.com/cleitonme/izing.open.io
+
 
 ## CHECAR PROPAGAÇÃO DO DOMÍNIO
 
@@ -20,9 +24,7 @@ https://dnschecker.org/
 
 ## RODAR OS COMANDOS ABAIXO ##
 
-Antes de iniciar verifique no site acima se propagou o dns. Para não ter erro na instalaçao
-
-Para evitar erros recomendados atualizar sistema e apos atualizar reniciar para evitar erros
+para evitar erros recomendados atualizar sistema e apos atualizar reniciar para evitar erros
 
 ```bash
 apt -y update && apt -y upgrade
@@ -104,29 +106,6 @@ npx quasar build -P -m pwa
 
 Testar as alterações em aba anonima
 
-## Erros
-
-"Internal server error: SequelizeConnectionError: could not open file \"global/pg_filenode.map\": Permission denied"
-
-```bash
-docker container restart postgresql
-```
-```bash
-docker exec -u root postgresql bash -c "chown -R postgres:postgres /var/lib/postgresql/data"
-```
-```bash
-docker container restart postgresql
-```
-
-## Acesso Portainer gerar senha
-"Your Portainer instance timed out for security purposes. To re-enable your Portainer instance, you will need to restart Portainer."
-
-```bash
-docker container restart portainer
-```
-
-Depois acesse novamente url http://seuip:9000/
-
 
 ## Recomendação de VPS boa e barata
 
@@ -137,4 +116,3 @@ Depois acesse novamente url http://seuip:9000/
 Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp (será cobrado por isso) 48 999416725 
 
 -  [Versão pro do IZING](https://github.com/cleitonme/izing.pro.install)
--  [Nova Versão com API Bayles](https://github.com/cleitonme/Whazing-SaaS.instalador)

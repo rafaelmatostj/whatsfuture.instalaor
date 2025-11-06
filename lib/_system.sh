@@ -398,7 +398,7 @@ system_certbot_setup() {
           --domains $backend_domain,$frontend_domain
 EOF
 
-  sleep 60
+  sleep 2
 }
 
 #######################################
@@ -475,6 +475,9 @@ system_success() {
   printf "${GREEN} 💻 Instalação concluída com Sucesso...${NC}"
   printf "${CYAN_LIGHT}";
   printf "\n\n"
+  printf "Usuário painel SaaS: super@izing.io"
+  printf "\n"
+  printf "Senha: 123456"
   printf "\n"
   printf "Usuário: admin@izing.io"
   printf "\n"
@@ -495,6 +498,8 @@ system_success() {
   printf "Senha do Banco de Dados: $pg_pass"
   printf "\n"
   printf "Senha do Redis: $redis_pass"
+  printf "\n"
+  printf "Senha do Rabbit: $rabbit_pass"
   printf "\n"
   printf "${NC}";
 
