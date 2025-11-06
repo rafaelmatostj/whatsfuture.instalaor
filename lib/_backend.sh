@@ -226,9 +226,8 @@ whatsappweb_update() {
   pm2 stop all
   rm .wwebjs_auth -Rf
   rm .wwebjs_cache -Rf
-  rm package-lock.json
   npm r whatsapp-web.js
-  npm install github:pedroslopez/whatsapp-web.js
+  npm i whatsapp-web.js@^1.24.0
   pm2 restart all
 EOF
 
@@ -264,8 +263,7 @@ git_update() {
   sudo su - deploy <<EOF
   cd /home/deploy/${nome_instancia}
   pm2 stop all
-  git stash clear
-  git stash
+  git checkout master
   git pull
 EOF
 

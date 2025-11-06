@@ -31,6 +31,7 @@ izing_atualizar() {
   backend_node_dependencies
   backend_node_build
   backend_db_migrate
+  backend_db_seed
   restart_pm2
   frontend_node_dependencies
   frontend_node_build
@@ -44,10 +45,6 @@ desativar_firewall () {
   parar_firewall
 }
 
-Erro_global () {
-  erro_banco
-}
-
 inquiry_options() {
   
   print_banner
@@ -59,7 +56,6 @@ inquiry_options() {
   printf "   [4] Atualizar Izing\n"
   printf "   [5] Ativar Firewall\n"
   printf "   [6] Desativar Firewall\n"
-  printf "   [7] Erro global/pg_filenode.map\n"
   printf "\n"
   read -p "> " option
 
@@ -86,11 +82,6 @@ inquiry_options() {
 	  
     6) 
       desativar_firewall 
-      exit
-      ;;
-	  
-    7) 
-      Erro_global 
       exit
       ;;
 
